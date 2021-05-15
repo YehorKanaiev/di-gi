@@ -1,6 +1,5 @@
 
-/* шрифты */
-
+/* fonts */
 /* Roboto 400,500 normal */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 /* Dosis 300 normal */
@@ -364,6 +363,7 @@ appearance effect of an plate
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .project__image:hover .project__description {
@@ -492,3 +492,121 @@ appearance effect of an plate
     left: 645px;
     bottom: 0;
 }
+
+
+
+.news {
+    background-color: var(--beige);
+}
+
+.news__title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--dark-grey);
+    padding: 50px 0 20px;
+    margin: 0;
+}
+
+.news__line {
+    background-color: var(--main-blue);
+    margin: 0 auto;
+}
+
+.news__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    max-height: 740px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0 80px;
+}
+
+
+.news__item {
+    position: relative;
+    flex: 0 1 auto;
+    width: 270px;
+    box-sizing: content-box;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.news__item:hover .news__item-title {
+    bottom: 26px;
+    background-color: var(--main-blue);
+    color: var(--beige);
+}
+
+.news__item:hover .news__item-image {
+    outline: var(--main-blue) solid 10px;
+    outline-offset: -10px;
+
+}
+
+.news__item-image img {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.news__item-title {
+    position: absolute;
+    left: 15px;
+    bottom: -4px;
+    width: 270px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: var(--dark-grey);
+    background-color: var(--white);
+}
+
+/* order of news items */
+
+.news__item:nth-child(1) {
+    order: 1;
+}
+
+.news__item:nth-child(2) {
+    order: 3;
+}
+
+.news__item:nth-child(3) {
+    order: 5;
+}
+
+.news__item:nth-child(4) {
+    order: 7;
+}
+
+.news__item:nth-child(5) {
+    order: 2;
+}
+
+.news__item:nth-child(6) {
+    order: 4;
+}
+
+.news__item:nth-child(7) {
+    order: 6;
+}
+
+.news__item:nth-child(8) {
+    order: 8;
+}
+
+
+
