@@ -6,15 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Di Gi digital agency</title>
 
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/normalize.css">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!--
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
--->
 <body>
 
 <section class="first-page" id="1">
@@ -31,18 +28,60 @@
         </div>
     </div>
 
-    <div class="first-page__carousel carousel">
+    <div class="first-page__carousel">
         <div class="first-page__container container">
-            <div class="carousel__content">
-                <h1 class="carousel__title">Мысли глобально</h1>
-                <h3 class="carousel__description">
-                    Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат наших клиентов
-                    в маркетинге, продажах и управлении
-                </h3>
-                <div class="first-page__detail-button-block">
-                    <button class="first-page__detail-button rectangular-button" type="button">Подробнее</button>
+            <div class="first-page__owl-carousel front-carousel">
+                <div class="front-carousel__item">
+                    <div class="front-carousel__content">
+                        <h1 class="front-carousel__title">Мысли глобально</h1>
+                        <h3 class="front-carousel__description">
+                            Di Gі - это диджитал агентство полного цикла, направленное на самый лучший результат
+                            наших клиентов
+                            в маркетинге, продажах и управлении
+                        </h3>
+                        <div class="front-carousel__detail-button-block">
+                            <button class="front-carousel__detail-button rectangular-button" type="button">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-carousel__item">
+                    <div class="front-carousel__content">
+                        <h1 class="front-carousel__title">Делай сочно - сдавай досрочно</h1>
+                        <h3 class="front-carousel__description">
+                            Никогда не ошибается тот, кто ничего не делает
+                        </h3>
+                        <div class="front-carousel__detail-button-block">
+                            <button class="front-carousel__detail-button rectangular-button" type="button">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-carousel__item">
+                    <div class="front-carousel__content">
+                        <h1 class="front-carousel__title">Ставь цель</h1>
+                        <h3 class="front-carousel__description">
+                            Цель не всегда должна быть достижима, часто она лишь служит тем, к чему можно
+                            стремиться
+                        </h3>
+                        <div class="front-carousel__detail-button-block">
+                            <button class="front-carousel__detail-button rectangular-button" type="button">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="first-page__carousel__nav">
+            <button class="front-carousel__prev">
+                <img src="images/icons/left-arrow.svg" alt="arrow">
+            </button>
+            <button class="front-carousel__next">
+                <img src="images/icons/right-arrow.svg" alt="arrow">
+            </button>
         </div>
     </div>
 
@@ -365,8 +404,77 @@
     </div>
 </section>
 
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__logo">
+            <img src="images/logo_Di-Gi.png" alt="logo">
+        </div>
+        <h3>
+            Мы хотели бы услышать все о вашем проекте.<br>
+            Свяжись с нами.
+        </h3>
+        <div class="footer__social">
+            <div class="footer__facebook">
+                <img src="images/icons/facebook.svg" alt="facebook icon">
+            </div>
+            <div class="footer__google-plus">
+                <img src="images/icons/google-plus.svg" alt="google+ icon">
+            </div>
+            <div class="footer__twitter">
+                <img src="images/icons/twitter.svg" alt="twitter icon">
+            </div>
+            <div class="footer__pinterest">
+                <img src="images/icons/pinterest.svg" alt="pinterest icon">
+            </div>
+        </div>
+        <div class="footer__widgets">
+            <div class="footer__contacts">
+                <h4 class="footer__widgets-title">Контакты</h4>
+                <a href="tel:+805555566">+80 555 55 66</a><br>
+                <a href="mailto:digi@gmail.com">digi@gmail.com</a>
+            </div>
+            <div class="footer__address">
+                <h4 class="footer__widgets-title">Адрес</h4>
+                <address>
+                    Пр. Науки 107 <br>
+                    Kиев / Украина
+                </address>
+            </div>
+            <div class="footer__help">
+                <h4 class="footer__widgets-title">Помощь</h4>
+                <a href="#1">Как с нами связаться?</a><br>
+                <a href="#1">Что такое диджитал?</a><br>
+                <a href="#1">Стоимость услуг</a>
+            </div>
+            <div class="footer__menu">
+                <h4 class="footer__widgets-title">Меню</h4>
+                <a href="#1">Наши проекты</a><br>
+                <a href="#1">Команда</a><br>
+                <a href="#1">Блог</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__up">
+        <a href="#1"><span>Вверх</span> <img src="images/icons/up-arrow.svg" alt="up arrow"></a>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
+
+
+<!-- «Делай. Или не делай. Не надо пытаться», — мастер Йода. -->
+<!-- «Многое кажется невозможным, пока ты этого не сделаешь», — Нельсон Мандела.
+
+navContainer: 'carousel-nav',
+      autoplayTimeout: 7000,
+        autoplaySpeed: 2000,
+                loop: true,
+        autoplay: true,
+-->
 
 
 
