@@ -1,9 +1,9 @@
 
 $(document).ready(function() {
 
-    var owl = $(".front-carousel");
+    var front = $(".front-carousel");
 
-    owl.owlCarousel({
+    front.owlCarousel({
         singleItem:true,
         autoPlay: 6000,
         slideSpeed : 1000,
@@ -14,9 +14,20 @@ $(document).ready(function() {
 
     // Custom Navigation Events
     $(".front-carousel__next").click(function(){
-        owl.trigger('owl.next');
+        front.trigger('owl.next');
     })
     $(".front-carousel__prev").click(function(){
-        owl.trigger('owl.prev');
+        front.trigger('owl.prev');
     })
+
+    var testimonial = $(".testimonial-carousel");
+
+    testimonial.owlCarousel({
+        singleItem:true,
+        autoPlay: 6000,
+        slideSpeed : 1000,
+        paginationSpeed : 1000,
+        rewindSpeed: 1000,
+        stopOnHover: true,
+    });
 });

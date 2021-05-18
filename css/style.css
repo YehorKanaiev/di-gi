@@ -27,7 +27,7 @@ body {
 
 
 .first-page {
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
 }
 
@@ -49,20 +49,32 @@ body {
     width: 40px;
     background-image: url("../images/icons/menu-burger-bg.svg");
     background-repeat: no-repeat;
+    padding-right: 85px;
 }
 
 .first-page__menu img {
     margin: 15px 14px;
 }
 
+.first-page__menu:hover {
+    cursor: pointer;
+}
 
 .first-page__carousel {
     position: relative;
     height: calc(100vh - 100px - 192px);
-    background-image: url("../images/bg-img.jpg");
-    background-size: 100% auto;
-    background-position: top;
-    overflow-y: hidden;
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.first-page__background {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    transform:translate( -50%, 0);
 }
 
 .front-carousel__content {
@@ -109,6 +121,11 @@ body {
     font-weight: 400;
     background-color: var(--main-blue);
     color: var(--beige);
+}
+
+.front-carousel__detail-button:hover {
+    background-color: var(--beige);
+    color: var(--main-blue);
 }
 
 .first-page__carousel__nav {
@@ -210,6 +227,12 @@ body {
     color: var(--main-blue);
 }
 
+.first-page__call-button:hover {
+    background-color: var(--main-blue);
+    color: var(--beige);
+    outline: 2px solid var(--beige);
+    outline-offset: -2px;
+}
 
 .services__container {
     display: flex;
@@ -228,7 +251,7 @@ body {
     line-height: 56px;
     color: var(--main-blue);
 
-    padding: 90px 0 65px 0;
+    padding: 90px 0 75px 0;
     margin: 0;
 }
 
@@ -261,7 +284,7 @@ body {
     line-height: 24px;
     color: var(--medium-grey);
 
-    padding: 35px 0 0 0;
+    padding: 30px 0 0 0;
     margin: 0;
 }
 
@@ -372,7 +395,7 @@ appearance effect of an plate
     text-transform: capitalize;
 
     text-align: center;
-    padding: 80px 0 0 0;
+    padding: 75px 0 0 0;
     margin: 0;
 }
 
@@ -439,7 +462,7 @@ appearance effect of an plate
     letter-spacing: 2px;
     color: var(--main-blue);
 
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .project__description {
@@ -465,7 +488,7 @@ appearance effect of an plate
 }
 
 .team {
-    padding: 50px 0 100px 0;
+    padding: 50px 0 110px 0;
 }
 
 .team__container {
@@ -493,11 +516,11 @@ appearance effect of an plate
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    line-height: 56px;
+    line-height: 48px;
     color: var(--dark-grey);
 
     margin: 0;
-    padding: 0 0 30px 0;
+    padding: 0 0 35px 0;
 }
 
 .team__line {
@@ -528,6 +551,12 @@ appearance effect of an plate
     bottom: 0;
 }
 
+.team__watch-video-button:hover {
+    outline: 2px solid var(--main-blue);
+    outline-offset: -2px;
+    color: var(--main-blue);
+    background-color: var(--beige);
+}
 
 .news {
     background-color: var(--beige);
@@ -556,10 +585,10 @@ appearance effect of an plate
     flex-direction: column;
     flex-wrap: wrap;
 
-    max-height: 740px;
+    max-height: 750px;
     width: 1200px;
     margin: 0 auto;
-    padding: 100px 0 80px;
+    padding: 100px 0 70px;
 }
 
 
@@ -568,7 +597,7 @@ appearance effect of an plate
     flex: 0 1 auto;
     width: 270px;
     box-sizing: content-box;
-    padding: 10px 15px;
+    padding: 12px 15px;
     cursor: pointer;
 }
 
@@ -576,12 +605,26 @@ appearance effect of an plate
     bottom: 26px;
     background-color: var(--main-blue);
     color: var(--beige);
+    transition: 0.5s;
 }
 
 .news__item:hover .news__item-image {
     outline: var(--main-blue) solid 10px;
     outline-offset: -10px;
+}
 
+.news__item:hover .news__info-icon {
+    display: inline-block;
+}
+
+.news__info-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .news__item-image img {
@@ -644,6 +687,53 @@ appearance effect of an plate
 
 /* ----- */
 
+
+.testimonial {
+    height: 530px;
+    background-color: var(--white);
+}
+
+.testimonial__quotes {
+    text-align: center;
+    padding: 85px 0 30px;
+}
+
+.testimonial-carousel {
+
+}
+
+.testimonial-carousel__quotation {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: var(--dark-grey);
+
+    width: 880px;
+    margin: 15px auto 0;
+}
+
+.testimonial-carousel__quotation b {
+    color: var(--main-blue);
+}
+
+.testimonial-carousel__author {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--dark-grey);
+
+    width: 880px;
+    margin: 30px auto 0;
+}
+
+
 .footer {
     background-color: var(--main-blue);
 }
@@ -653,7 +743,7 @@ appearance effect of an plate
 .footer__logo {
     position: absolute;
     top: -30px;
-    left: 585px;
+    left: 600px;
     width: 230px;
     height: 60px;
     border-radius: 3px;
@@ -662,7 +752,7 @@ appearance effect of an plate
 }
 
 .footer__logo img {
-    height: 100%;
+    height: 90%;
 }
 
 .footer h3 {
@@ -673,31 +763,35 @@ appearance effect of an plate
     line-height: 32px;
     letter-spacing: 2px;
     color: var(--white);
-    padding: 160px 85px 80px;
+    padding: 150px 85px 85px;
     margin: 0;
 }
 
 .footer__social {
     display: flex;
-    padding: 0 85px 80px;
+    padding: 0 85px 85px;
     height: 60px;
 
     align-items: center;
 
 }
 
-.footer__social > div {
+.footer__social > a {
+    display: flex;
     width: 25%;
     height: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border-top: 1px solid var(--green);
-    border-bottom: 1px solid var(--green);
-    border-right: 1px solid var(--green);
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid var(--green);
+    border-left: none;
 }
 
-.footer__social > div:last-child {
+.footer__social > a:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.footer__social > a:last-child {
     border-right: none;
 }
 
@@ -719,7 +813,7 @@ appearance effect of an plate
 
 .footer__widgets {
     display: flex;
-    padding: 0 85px 80px;
+    padding: 0 85px 90px;
 }
 
 .footer__widgets > div {
@@ -743,7 +837,7 @@ appearance effect of an plate
     text-transform: uppercase;
     color: var(--beige);
 
-    padding: 0 0 22px;
+    padding: 0 0 20px;
     margin: 0;
 }
 
