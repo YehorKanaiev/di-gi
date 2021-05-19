@@ -3,12 +3,12 @@
 *	v1.23
 */
 
+/* ===== front-carousel ===== */
+
 .owl-theme .owl-controls{
 	margin-top: 45px;
 	text-align: center;
 }
-
-/* Styling Pagination*/
 
 .owl-theme .owl-controls .owl-page{
 	display: inline-block;
@@ -36,15 +36,12 @@
 	background: rgba(255,255,255,0);
 }
 
-
-
+/* ===== testimonial-carousel ===== */
 
 .testimonial-carousel .owl-controls{
 	margin-top: 75px;
 	text-align: center;
 }
-
-/* Styling Pagination*/
 
 .testimonial-carousel .owl-controls .owl-page{
 	display: inline-block;
@@ -63,7 +60,6 @@
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-
 }
 
 .testimonial-carousel .owl-controls .owl-page.active span,
