@@ -1,8 +1,8 @@
 /* fonts */
 /* Roboto 400,500 normal */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-/* Dosis 300 normal */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+/* Dosis 300,400 normal */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&display=swap');
 /* Roboto Condensed 400,700 normal */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
@@ -43,8 +43,6 @@ body {
     align-items: center;
     padding: 17px 0;
 }
-
-
 
 .first-page__menu {
     height: 40px;
@@ -113,6 +111,10 @@ body {
     margin: 0;
 }
 
+.front-carousel__line {
+    display: none;
+}
+
 .front-carousel__detail-button-block {
     text-align: center;
 }
@@ -145,7 +147,6 @@ body {
     width: 70px;
     height: 70px;
 }
-
 
 .front-carousel__prev {
     background-color: var(--main-blue);
@@ -706,10 +707,6 @@ appearance effect of an plate
     padding: 85px 0 30px;
 }
 
-.testimonial-carousel {
-
-}
-
 .testimonial-carousel__quotation {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
@@ -746,13 +743,11 @@ appearance effect of an plate
 .footer {
     background-color: var(--main-blue);
 }
-.footer__container {
-    position: relative;
-}
+
 .footer__logo {
-    position: absolute;
+    position: relative;
     top: -30px;
-    left: 600px;
+    margin: 0 auto;
     width: 230px;
     height: 60px;
     border-radius: 3px;
@@ -772,7 +767,9 @@ appearance effect of an plate
     line-height: 32px;
     letter-spacing: 2px;
     color: var(--white);
-    padding: 150px 85px 85px;
+
+    width: 730px;
+    padding: 95px 85px 85px;
     margin: 0;
 }
 
@@ -782,7 +779,6 @@ appearance effect of an plate
     height: 60px;
 
     align-items: center;
-
 }
 
 .footer__social > a {
