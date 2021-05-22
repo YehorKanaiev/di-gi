@@ -500,6 +500,94 @@
         text-align: center;
     }
 
+    .services__item {
+        height: 310px;
+    }
+
+    .plate {
+        width: 290px;
+        height: 280px;
+    }
+
+    /* ===== portfolio ===== */
+
+    .portfolio {
+        height: 2300px;
+        padding-bottom: 80px;
+    }
+
+    .portfolio__title {
+        padding: 35px 0 0 0;
+    }
+
+    .portfolio__line {
+        margin: 25px auto 40px;
+    }
+
+    .project {
+        width: 518px;
+    }
+
+    .project__image {
+        height: 460px;
+    }
+
+    .project__info img, .project__search img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .project__info {
+        margin-right: 10px;
+    }
+
+    /* ===== team ===== */
+
+    .team {
+        padding: 45px 0 150px 0
+    }
+
+    .team__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .team__image {
+        width: 90%;
+        height: auto;
+    }
+
+    .team__image img {
+        width: 100%;
+    }
+
+    .team__description {
+        width: 100%;
+        padding: 55px 0;
+    }
+
+    .team__title {
+        text-align: center;
+    }
+
+    .team__line {
+        margin: 0 auto 40px;
+    }
+
+    .team__description p {
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
 
 }
 
@@ -534,7 +622,7 @@
     .front-carousel__title {
         font-size: 28px;
         line-height: 28px;
-        width: 50%;
+        width: 75%;
         padding: 45px 0 18px;
     }
 
@@ -561,6 +649,132 @@
         text-align: center;
         width: 100%;
     }
+
+    /* ===== services ===== */
+
+    .services__description h2 {
+        padding: 25px 0 75px;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 2px;
+    }
+
+    .services__description h3 {
+        padding: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .services__line {
+        position: relative;
+        top: -100px;
+    }
+
+    .services__description p {
+        font-size: 15px;
+        line-height: 17px;
+        padding-top: 20px;
+    }
+
+
+    .services__item {
+        width: 100%;
+    }
+
+    .plate {
+        width: 250px;
+        height: 275px;
+    }
+
+    .plate__image {
+        padding: 70px 0 25px;
+    }
+
+    .plate__title {
+        padding: 0 5px 10px;
+    }
+
+    .plate__description {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0 5px;
+    }
+
+    /* ===== portfolio ===== */
+
+    .portfolio {
+        height: 1360px;
+        padding-bottom: 0;
+    }
+
+    .portfolio__title {
+        padding: 25px 0 0 0;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .portfolio__line {
+        margin: 20px auto 40px;
+        width: 45px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project__image {
+        height: 250px;
+    }
+
+    .project__name {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 5px 0;
+    }
+
+    .project__info img, .project__search img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .project__info {
+        margin-right: 0;
+    }
+
+
+    /* ===== team ===== */
+
+    .team {
+        padding: 45px 0 200px 0;
+    }
+
+    .team__title {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .team__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .team__description {
+        padding: 15px 0 0;
+    }
+
+    .team__line {
+        width: 40px;
+        margin: 0 auto 25px;
+    }
+
+    .team__watch-video-button {
+        bottom:  -160px;
+    }
+
+
+
+
+
 
     /* ===== front-carousel ===== */
     .owl-theme .owl-controls {
